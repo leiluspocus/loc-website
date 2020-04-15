@@ -1,3 +1,67 @@
+/**
+ * Bleu: #4EA29B
+ * Rose: #E64533 
+ * Violet: #2B3280
+ */
+
 body {
     background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    margin: 0 auto;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo img {
+    width: 200px;
+}
+ 
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    width: 100px;
+}
+
+.actions {
+    display: flex;
+}
+
+a {
+    color: #2B3280;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #eee;
+    padding: 2px 6px;
+    border-bottom: 3px yellow solid;
+}
+
+
+/**
+ * Phrase clignotante 
+ */
+
+  #community {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
