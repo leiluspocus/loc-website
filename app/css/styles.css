@@ -1,0 +1,70 @@
+/**
+ * Bleu: #4EA29B
+ * Rose: #E64533 
+ * Violet: #2B3280
+ */
+body {
+  background-color: #fff;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif; }
+
+.header {
+  margin-top: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  background: #F7FAFF; }
+  .header__logo {
+    margin-left: 90px; }
+
+nav {
+  display: flex;
+  align-items: center; }
+
+ul {
+  list-style-type: none; }
+
+ul li {
+  display: inline-block;
+  width: 100px; }
+
+.actions {
+  display: flex; }
+
+a {
+  color: blue;
+  text-decoration: none; }
+
+a:hover {
+  background-color: #eee;
+  padding: 2px 6px;
+  border-bottom: 3px yellow solid; }
+
+/**
+ * Phrase clignotante 
+ */
+.code-editor {
+  background-color: #F7FAFF;
+  font-family: 'B612 Mono', monospace;
+  font-size: 25px;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  align-items: center; }
+  .code-editor__diese {
+    color: #E64533;
+    margin-left: 90px;
+    margin-right: 5px; }
+  .code-editor #loc {
+    margin-right: 10px; }
+  .code-editor #community {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }
+
+h2 {
+  font-family: 'B612 Mono', monospace; }
+

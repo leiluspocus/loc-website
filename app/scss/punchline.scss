@@ -1,0 +1,37 @@
+/**
+ * Phrase clignotante 
+ */
+
+@import './variables.scss';
+
+ .code-editor {
+  background-color: $codeEditorBg;
+  font-family: 'B612 Mono', monospace;
+  font-size: 25px;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+
+  &__diese {
+    color: $locPink;
+    margin-left: 90px;
+    margin-right: 5px;
+  }
+
+  #loc {
+    margin-right: 10px;
+  }
+
+  #community {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+ }
+
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
