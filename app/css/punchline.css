@@ -1,0 +1,36 @@
+/**
+ * Phrase clignotante 
+ */
+.cta {
+  width: 450px;
+  color: #000;
+  margin-top: 15px;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 24px; }
+  .cta--pink {
+    background: rgba(229, 51, 52, 0.3); }
+  .cta a {
+    text-decoration: none; }
+
+.code-editor {
+  background-color: #F7FAFF;
+  font-family: 'B612 Mono', monospace;
+  font-size: 25px;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  align-items: center; }
+  .code-editor__diese {
+    color: #E64533;
+    margin-left: 90px;
+    margin-right: 5px; }
+  .code-editor #loc {
+    margin-right: 10px; }
+  .code-editor #community {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite; }
+
+@keyframes caret {
+  50% {
+    border-color: transparent; } }

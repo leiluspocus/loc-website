@@ -1,0 +1,9 @@
+h2 {
+  font-family: 'B612 Mono', monospace;
+  text-align: left; }
+  h2::before {
+    content: url("../images/chevron.svg");
+    width: 30px; }
+
+.section img {
+  max-width: 500px; }

@@ -10,18 +10,13 @@
     background-color: #fff;
     margin: 0 auto; 
     font-family: 'Montserrat', sans-serif; 
+    padding: 30px;
 }
 
 .header {
-    margin-top: 30px;
-    margin-right: 30px;
     display: flex;
     justify-content: space-between;
     background: $codeEditorBg;
-
-    &__logo {
-        margin-left: 90px;
-    }
 }
 
  
@@ -29,28 +24,31 @@
 nav {
     display: flex;
     align-items: center;
+
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            width: 100px;
+            text-align: center;
+            font-size: 16px;
+        
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        
+            a:hover {
+                background-color: #eee;
+                border-bottom: 3px solid;
+            }
+        
+        }
+    } 
 }
 
-ul {
-    list-style-type: none;
-}
 
-ul li {
-    display: inline-block;
-    width: 100px;
-}
 
 .actions {
     display: flex;
-}
-
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: #eee;
-    padding: 2px 6px;
-    border-bottom: 3px yellow solid;
 }

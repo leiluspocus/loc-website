@@ -1,0 +1,20 @@
+.meetups {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    &__item {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        img {
+            height: 255px;
+        }
+
+        span {
+            margin-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+/**
+ * Bleu: #4EA29B
+ * Rose: #E64533 
+ * Violet: #2B3280
+ */
+.cta {
+  width: 450px;
+  color: #000;
+  margin-top: 15px;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 24px; }
+  .cta--pink {
+    background: rgba(229, 51, 52, 0.3); }
+  .cta a {
+    text-decoration: none; }
+
+body {
+  background-color: #fff;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #F7FAFF; }
+
+nav {
+  display: flex;
+  align-items: center; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+      font-size: 16px; }
+      nav ul li a {
+        color: black;
+        text-decoration: none; }
+      nav ul li a:hover {
+        background-color: #eee;
+        border-bottom: 3px solid; }
+
+.actions {
+  display: flex; }

@@ -2,3 +2,22 @@ $codeEditorBg:#F7FAFF;
 $locBlue:#4EA29B;
 $locPink: #E64533; 
 $locPurple: #2B3280;
+
+.cta {
+
+    width: 450px;
+    color: #000;
+    margin-top: 15px;
+    display: inline-block;
+    
+    line-height: 20px;
+    font-size: 24px;
+
+    &--pink {
+        background: rgba(229, 51, 52, 0.3);
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
