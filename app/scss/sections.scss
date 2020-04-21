@@ -1,15 +1,64 @@
+
+@import './variables.scss';
+
 h2 {
     font-family: 'B612 Mono', monospace;
     text-align: left;
 
     &::before {
         content: url('../images/chevron.svg');
-        width: 30px;
+        width: 20px;
     }
 }
 
 .section {
     img {
-        max-width: 500px;
+        max-width: 400px;
+    }
+
+    &__diversity, .diversity {
+        display: flex;
+        flex-direction: column;
+        // width: 1200px;
+
+        &-school {
+            border-bottom: 10px solid $locBlue;
+        }
+
+        &-amtdp {
+            border-bottom: 10px solid $locPurple;
+        }
+
+        &-codeweek {
+            border-bottom: 10px solid $locPink; // tata
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px; 
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+            p {
+                text-align: center;
+                font-size: 18px;
+                line-height: 34px;
+                padding: 43px;
+
+                a {
+                    display: inline-block;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &-school, &-amtdp { 
+            width: 1200px;
+            align-self: flex-end;
+        }
+
+        &-codeweek {
+            width: 1200px;
+        }
     }
 }

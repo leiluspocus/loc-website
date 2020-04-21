@@ -5,15 +5,15 @@
  */
 .cta {
   width: 450px;
-  color: #000;
   margin-top: 15px;
   display: inline-block;
   line-height: 20px;
-  font-size: 24px; }
+  font-size: 30px; }
   .cta--pink {
     background: rgba(229, 51, 52, 0.3); }
   .cta a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #000; }
 
 body {
   background-color: #fff;
