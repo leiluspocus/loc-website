@@ -2,6 +2,8 @@
 @import './variables.scss';
 
 .section {
+    @include spaceSection();
+
     h2 {
         font-family: 'B612 Mono', monospace;
         text-align: left;
@@ -9,7 +11,9 @@
     
         &::before {
             content: url('../images/chevron.svg');
-            width: 20px;
+            position: relative;
+            top: 4px;
+            margin-right: 21px;
         }
     }
 
@@ -21,7 +25,13 @@
 
     a {
         display: inline-block;
-        margin-top: 15px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 60px;
+        text-decoration: none;
+        color: #000;
+        margin-top: 44px;
     }
 
     &__diversity, .diversity {

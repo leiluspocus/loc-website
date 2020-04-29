@@ -11,6 +11,7 @@
     color: #000; }
 
 .section {
+  margin-bottom: 85px;
   text-align: center; }
   .section h2 {
     font-family: 'B612 Mono', monospace;
@@ -18,12 +19,20 @@
     padding-left: 32px; }
     .section h2::before {
       content: url("../images/chevron.svg");
-      width: 20px; }
+      position: relative;
+      top: 4px;
+      margin-right: 21px; }
   .section img {
     max-width: 400px; }
   .section a {
     display: inline-block;
-    margin-top: 15px; }
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 44px; }
   .section__diversity, .section .diversity {
     display: flex;
     flex-direction: column; }

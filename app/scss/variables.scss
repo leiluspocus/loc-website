@@ -3,8 +3,18 @@ $locBlue:#4EA29B;
 $locPink: #E64533; 
 $locPurple: #2B3280;
 
+@mixin spaceSection {
+    margin-bottom: 85px;
+}
+
 @mixin paddingPage {
     padding: 30px;
+}
+
+@mixin borderImage($color) {
+    height: 255px;
+    border-left: 9px solid $color;
+    border-right: 9px solid $color;
 }
 
 .cta {

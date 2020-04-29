@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .meetups {
     display: flex;
     justify-content: space-around;
@@ -9,12 +11,20 @@
         flex-direction: column;
         text-align: center;
 
-        img {
-            height: 255px;
+        span {
+            margin-top: 15px;
         }
 
-        span {
-            margin-top: 5px;
+        img.aperos {
+            @include borderImage($locBlue);
+        }
+
+        img.workshops {
+            @include borderImage($locPink);
+        }
+
+        img.techtalks {
+            @include borderImage($locPurple);
         }
     }
 }

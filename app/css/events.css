@@ -1,3 +1,15 @@
+.cta {
+  width: 450px;
+  margin-top: 15px;
+  display: inline-block;
+  line-height: 20px;
+  font-size: 30px; }
+  .cta--pink {
+    background: rgba(229, 51, 52, 0.3); }
+  .cta a {
+    text-decoration: none;
+    color: #000; }
+
 .meetups {
   display: flex;
   justify-content: space-around;
@@ -6,7 +18,17 @@
     display: flex;
     flex-direction: column;
     text-align: center; }
-    .meetups__item img {
-      height: 255px; }
     .meetups__item span {
-      margin-top: 5px; }
+      margin-top: 15px; }
+    .meetups__item img.aperos {
+      height: 255px;
+      border-left: 9px solid #4EA29B;
+      border-right: 9px solid #4EA29B; }
+    .meetups__item img.workshops {
+      height: 255px;
+      border-left: 9px solid #E64533;
+      border-right: 9px solid #E64533; }
+    .meetups__item img.techtalks {
+      height: 255px;
+      border-left: 9px solid #2B3280;
+      border-right: 9px solid #2B3280; }
