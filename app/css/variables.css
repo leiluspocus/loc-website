@@ -4,11 +4,6 @@
   display: inline-block;
   line-height: 20px;
   font-size: 30px; }
-  .cta--pink {
-    box-shadow: inset -10px -30px 1px #E5333433; }
-  .cta--pink:hover {
-    background-color: #E64533;
-    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }

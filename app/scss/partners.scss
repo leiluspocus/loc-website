@@ -1,12 +1,19 @@
 .section {
+    p {
+        margin-bottom: 30px;
+    }
+
     &__partners {
 
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 2.5rem;
+
         margin: 0 80px;
 
         img {
             height: 50px;
+            justify-self: center;
         }
 
         p {

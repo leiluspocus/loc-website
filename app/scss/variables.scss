@@ -26,14 +26,6 @@ $locPurple: #2B3280;
     line-height: 20px;
     font-size: 30px;
 
-    &--pink {
-        box-shadow: inset -10px -30px 1px #E5333433; 
-    }
-
-    &--pink:hover {
-        background-color: $locPink;
-        color: #fff;
-    }
 
     a {
         text-decoration: none;

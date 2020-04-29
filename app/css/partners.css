@@ -1,8 +1,13 @@
+.section p {
+  margin-bottom: 30px; }
+
 .section__partners {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2.5rem;
   margin: 0 80px; }
   .section__partners img {
-    height: 50px; }
+    height: 50px;
+    justify-self: center; }
   .section__partners p {
     margin-bottom: 30px; }

@@ -4,11 +4,6 @@
   display: inline-block;
   line-height: 20px;
   font-size: 30px; }
-  .cta--pink {
-    box-shadow: inset -10px -30px 1px #E5333433; }
-  .cta--pink:hover {
-    background-color: #E64533;
-    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }
@@ -19,11 +14,6 @@
   display: inline-block;
   line-height: 20px;
   font-size: 30px; }
-  .cta--pink {
-    box-shadow: inset -10px -30px 1px #E5333433; }
-  .cta--pink:hover {
-    background-color: #E64533;
-    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }
@@ -43,7 +33,7 @@
       margin-right: 21px; }
   .section img {
     max-width: 400px; }
-  .section a {
+  .section .big-meetup {
     display: inline-block;
     font-style: normal;
     font-weight: bolder;
@@ -52,7 +42,11 @@
     text-decoration: none;
     color: #000;
     margin-top: 44px;
-    padding: 3px 6px; }
+    padding: 3px 6px;
+    box-shadow: inset -10px -30px 1px #E5333433; }
+  .section .big-meetup:hover {
+    background-color: #E64533;
+    color: #fff; }
   .section__diversity, .section .diversity {
     display: flex;
     flex-direction: column; }
@@ -77,6 +71,33 @@
         padding: 30px; }
     .section__diversity-school, .section__diversity-amtdp, .section .diversity-school, .section .diversity-amtdp {
       align-self: flex-end; }
+    .section__diversity-cta, .section .diversity-cta {
+      text-decoration: none;
+      color: #000;
+      font-size: 24px;
+      display: inline-block;
+      margin-top: 50px; }
+      .section__diversity-cta::before, .section .diversity-cta::before {
+        content: url("../images/arrow.svg");
+        width: 20px;
+        margin-right: 10px; }
+      .section__diversity-cta span, .section .diversity-cta span {
+        padding: 0 13px; }
+    .section__diversity-cta.cta--green span, .section .diversity-cta.cta--green span {
+      box-shadow: inset 0px -10px 1px #4EA29B33; }
+    .section__diversity-cta.cta--green span:hover, .section .diversity-cta.cta--green span:hover {
+      background: rgba(35, 161, 154, 0.3);
+      box-shadow: none; }
+    .section__diversity-cta.cta--pink span, .section .diversity-cta.cta--pink span {
+      box-shadow: inset 0px -10px 1px #E6453333; }
+    .section__diversity-cta.cta--pink span:hover, .section .diversity-cta.cta--pink span:hover {
+      background: rgba(229, 51, 52, 0.3);
+      box-shadow: none; }
+    .section__diversity-cta.cta--purple span, .section .diversity-cta.cta--purple span {
+      box-shadow: inset 0px -10px 1px #2B328033; }
+    .section__diversity-cta.cta--purple span:hover, .section .diversity-cta.cta--purple span:hover {
+      background: rgba(43, 50, 128, 0.3);
+      box-shadow: none; }
 
 footer {
   margin-top: 100px;
@@ -104,11 +125,6 @@ footer {
   display: inline-block;
   line-height: 20px;
   font-size: 30px; }
-  .cta--pink {
-    box-shadow: inset -10px -30px 1px #E5333433; }
-  .cta--pink:hover {
-    background-color: #E64533;
-    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }
@@ -153,11 +169,6 @@ nav {
   display: inline-block;
   line-height: 20px;
   font-size: 30px; }
-  .cta--pink {
-    box-shadow: inset -10px -30px 1px #E5333433; }
-  .cta--pink:hover {
-    background-color: #E64533;
-    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }
@@ -190,11 +201,6 @@ nav {
   display: inline-block;
   line-height: 20px;
   font-size: 30px; }
-  .cta--pink {
-    box-shadow: inset -10px -30px 1px #E5333433; }
-  .cta--pink:hover {
-    background-color: #E64533;
-    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }
@@ -229,11 +235,16 @@ nav {
   .meetups {
     flex-direction: row; } }
 
+.section p {
+  margin-bottom: 30px; }
+
 .section__partners {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2.5rem;
   margin: 0 80px; }
   .section__partners img {
-    height: 50px; }
+    height: 50px;
+    justify-self: center; }
   .section__partners p {
     margin-bottom: 30px; }
