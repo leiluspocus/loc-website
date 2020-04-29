@@ -143,6 +143,23 @@ footer {
         padding-top: 30px;
         font-family: 'B612 Mono', monospace;
     }
+
+    a {
+        display: inline-block;
+        margin-right: 30px;
+        text-decoration: none;
+        color: #000;
+        &::before {
+            font-size: 34px;
+        }
+    }
+
+    a:hover {
+        color: $locPurple;
+    }
+    a:nth-child(even):hover {
+        color: $locPink;
+    }
 }
 
 @media screen and (min-width: 1200px) {
