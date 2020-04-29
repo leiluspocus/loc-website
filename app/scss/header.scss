@@ -9,11 +9,11 @@
  body {
     background-color: #fff;
     margin: 0 auto; 
-    font-family: 'Montserrat', sans-serif; 
-    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
+    @include paddingPage;
     display: flex;
     justify-content: space-between;
     background: $codeEditorBg;

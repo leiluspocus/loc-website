@@ -10,41 +10,48 @@
     text-decoration: none;
     color: #000; }
 
-h2 {
-  font-family: 'B612 Mono', monospace;
-  text-align: left; }
-  h2::before {
-    content: url("../images/chevron.svg");
-    width: 20px; }
-
-.section img {
-  max-width: 400px; }
-
-.section__diversity, .section .diversity {
-  display: flex;
-  flex-direction: column; }
-  .section__diversity-school, .section .diversity-school {
-    border-bottom: 10px solid #4EA29B; }
-  .section__diversity-amtdp, .section .diversity-amtdp {
-    border-bottom: 10px solid #2B3280; }
-  .section__diversity-codeweek, .section .diversity-codeweek {
-    border-bottom: 10px solid #E64533; }
-  .section__diversity div, .section .diversity div {
+.section {
+  text-align: center; }
+  .section h2 {
+    font-family: 'B612 Mono', monospace;
+    text-align: left;
+    padding-left: 32px; }
+    .section h2::before {
+      content: url("../images/chevron.svg");
+      width: 20px; }
+  .section img {
+    max-width: 400px; }
+  .section a {
+    display: inline-block;
+    margin-top: 15px; }
+  .section__diversity, .section .diversity {
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    background-color: #F7FAFF;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25); }
-    .section__diversity div p, .section .diversity div p {
-      text-align: center;
-      font-size: 18px;
-      line-height: 34px;
-      padding: 43px; }
-      .section__diversity div p a, .section .diversity div p a {
-        display: inline-block;
-        margin-top: 15px; }
-  .section__diversity-school, .section__diversity-amtdp, .section .diversity-school, .section .diversity-amtdp {
-    width: 1200px;
-    align-self: flex-end; }
-  .section__diversity-codeweek, .section .diversity-codeweek {
-    width: 1200px; }
+    flex-direction: column; }
+    .section__diversity-school, .section .diversity-school {
+      border-bottom: 10px solid #4EA29B; }
+    .section__diversity-amtdp, .section .diversity-amtdp {
+      border-bottom: 10px solid #2B3280; }
+    .section__diversity-codeweek, .section .diversity-codeweek {
+      border-bottom: 10px solid #E64533; }
+    .section__diversity div, .section .diversity div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      background-color: #F7FAFF;
+      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25); }
+      .section__diversity div p, .section .diversity div p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 34px;
+        padding: 43px; }
+    .section__diversity-school, .section__diversity-amtdp, .section .diversity-school, .section .diversity-amtdp {
+      width: 1200px;
+      align-self: flex-end; }
+    .section__diversity-codeweek, .section .diversity-codeweek {
+      width: 1200px; }
+
+footer {
+  text-align: center;
+  background: #FAFAFA; }
+  footer h2 {
+    font-family: 'B612 Mono', monospace; }

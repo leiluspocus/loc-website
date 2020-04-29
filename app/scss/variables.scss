@@ -3,6 +3,10 @@ $locBlue:#4EA29B;
 $locPink: #E64533; 
 $locPurple: #2B3280;
 
+@mixin paddingPage {
+    padding: 30px;
+}
+
 .cta {
 
     width: 450px;

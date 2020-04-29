@@ -1,19 +1,27 @@
 
 @import './variables.scss';
 
-h2 {
-    font-family: 'B612 Mono', monospace;
-    text-align: left;
-
-    &::before {
-        content: url('../images/chevron.svg');
-        width: 20px;
-    }
-}
-
 .section {
+    h2 {
+        font-family: 'B612 Mono', monospace;
+        text-align: left;
+        padding-left: 32px;
+    
+        &::before {
+            content: url('../images/chevron.svg');
+            width: 20px;
+        }
+    }
+
+    text-align: center;
+
     img {
         max-width: 400px;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 15px;
     }
 
     &__diversity, .diversity {
@@ -45,11 +53,6 @@ h2 {
                 font-size: 18px;
                 line-height: 34px;
                 padding: 43px;
-
-                a {
-                    display: inline-block;
-                    margin-top: 15px;
-                }
             }
         }
 
@@ -61,5 +64,15 @@ h2 {
         &-codeweek {
             width: 1200px;
         }
+    }
+}
+
+footer {
+    text-align: center;
+
+    background: #FAFAFA;
+    
+    h2 {
+        font-family: 'B612 Mono', monospace;
     }
 }
