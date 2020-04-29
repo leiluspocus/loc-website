@@ -79,14 +79,19 @@
       align-self: flex-end; }
 
 footer {
+  margin-top: 100px;
   text-align: center;
-  background: #FAFAFA; }
+  height: 245px;
+  background: #E3D9BA43; }
   footer h2 {
+    padding-top: 30px;
     font-family: 'B612 Mono', monospace; }
 
 @media screen and (min-width: 1200px) {
-  .section__diversity div {
-    width: 1200px; } }
+  .section__diversity div, .section .diversity div {
+    width: 1200px; }
+  .section__diversity img, .section .diversity img {
+    max-width: 400px; } }
 
 /**
  * Bleu: #4EA29B
@@ -223,3 +228,12 @@ nav {
 @media screen and (min-width: 1000px) {
   .meetups {
     flex-direction: row; } }
+
+.section__partners {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 80px; }
+  .section__partners img {
+    height: 50px; }
+  .section__partners p {
+    margin-bottom: 30px; }

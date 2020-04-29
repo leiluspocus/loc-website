@@ -64,11 +64,16 @@
       align-self: flex-end; }
 
 footer {
+  margin-top: 100px;
   text-align: center;
-  background: #FAFAFA; }
+  height: 245px;
+  background: #E3D9BA43; }
   footer h2 {
+    padding-top: 30px;
     font-family: 'B612 Mono', monospace; }
 
 @media screen and (min-width: 1200px) {
-  .section__diversity div {
-    width: 1200px; } }
+  .section__diversity div, .section .diversity div {
+    width: 1200px; }
+  .section__diversity img, .section .diversity img {
+    max-width: 400px; } }

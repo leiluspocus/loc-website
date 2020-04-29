@@ -1,0 +1,8 @@
+.section__partners {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 80px; }
+  .section__partners img {
+    height: 50px; }
+  .section__partners p {
+    margin-bottom: 30px; }

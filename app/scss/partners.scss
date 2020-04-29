@@ -1,0 +1,16 @@
+.section {
+    &__partners {
+
+        display: flex;
+        justify-content: space-around;
+        margin: 0 80px;
+
+        img {
+            height: 50px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+}

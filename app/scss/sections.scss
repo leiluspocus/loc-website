@@ -79,20 +79,26 @@
 }
 
 footer {
+    margin-top: 100px;
     text-align: center;
-
-    background: #FAFAFA;
+    height: 245px;
+    background: #E3D9BA43;
     
     h2 {
+        padding-top: 30px;
         font-family: 'B612 Mono', monospace;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section {
-        &__diversity {
+        &__diversity, .diversity {
             div {
                 width: 1200px;
+            }
+            
+            img {
+                max-width: 400px;
             }
         }
     }
