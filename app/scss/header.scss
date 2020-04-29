@@ -14,15 +14,17 @@
 
 .header {
     @include paddingPage;
-    display: flex;
-    justify-content: space-between;
     background: $codeEditorBg;
+
+    &__logo {
+        text-align: center;
+    }
 }
 
  
 
 nav {
-    display: flex;
+    display: none;
     align-items: center;
 
     ul {
@@ -51,4 +53,15 @@ nav {
 
 .actions {
     display: flex;
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+    }
 }

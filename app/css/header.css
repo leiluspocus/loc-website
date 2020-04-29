@@ -20,12 +20,12 @@ body {
 
 .header {
   padding: 30px;
-  display: flex;
-  justify-content: space-between;
   background: #F7FAFF; }
+  .header__logo {
+    text-align: center; }
 
 nav {
-  display: flex;
+  display: none;
   align-items: center; }
   nav ul {
     list-style-type: none; }
@@ -43,3 +43,10 @@ nav {
 
 .actions {
   display: flex; }
+
+@media screen and (min-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: space-between; }
+  nav {
+    display: flex; } }
