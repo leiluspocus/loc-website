@@ -5,7 +5,10 @@
   line-height: 20px;
   font-size: 30px; }
   .cta--pink {
-    background: rgba(229, 51, 52, 0.3); }
+    box-shadow: inset -10px -30px 1px #E5333433; }
+  .cta--pink:hover {
+    background-color: #E64533;
+    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }
@@ -13,11 +16,14 @@
 .meetups {
   display: flex;
   justify-content: space-around;
-  text-align: center; }
+  text-align: center;
+  flex-direction: column; }
   .meetups__item {
     display: flex;
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    align-self: center;
+    margin-top: 30px; }
     .meetups__item span {
       margin-top: 15px; }
     .meetups__item img.aperos {
@@ -32,3 +38,7 @@
       height: 255px;
       border-left: 9px solid #2B3280;
       border-right: 9px solid #2B3280; }
+
+@media screen and (min-width: 1000px) {
+  .meetups {
+    flex-direction: row; } }

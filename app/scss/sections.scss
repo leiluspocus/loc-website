@@ -2,12 +2,13 @@
 @import './variables.scss';
 
 .section {
-    @include spaceSection();
+    margin-top: 85px;
 
     h2 {
         font-family: 'B612 Mono', monospace;
         text-align: left;
         padding-left: 32px;
+        margin-bottom: 50px;
     
         &::before {
             content: url('../images/chevron.svg');
@@ -26,18 +27,18 @@
     a {
         display: inline-block;
         font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 60px;
+        font-weight: bolder;
+        font-size: 25px;
+        line-height: 22px;
         text-decoration: none;
         color: #000;
         margin-top: 44px;
+        padding: 3px 6px;
     }
 
     &__diversity, .diversity {
         display: flex;
         flex-direction: column;
-        // width: 1200px;
 
         &-school {
             border-bottom: 10px solid $locBlue;
@@ -51,29 +52,29 @@
             border-bottom: 10px solid $locPink; // tata
         }
 
+        img {
+            max-width: 200px;
+        }
+
         div {
+            @include spaceSection();
             display: flex;
-            align-items: center;
-            margin-bottom: 30px; 
+            align-items: center; 
             background-color: $codeEditorBg;
-            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25);
 
             p {
                 text-align: center;
                 font-size: 18px;
-                line-height: 34px;
-                padding: 43px;
+                line-height: 26px;
+                padding: 30px;
             }
         }
 
-        &-school, &-amtdp { 
-            width: 1200px;
+        &-school, &-amtdp {
             align-self: flex-end;
         }
 
-        &-codeweek {
-            width: 1200px;
-        }
     }
 }
 
@@ -84,5 +85,15 @@ footer {
     
     h2 {
         font-family: 'B612 Mono', monospace;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
+        &__diversity {
+            div {
+                width: 1200px;
+            }
+        }
     }
 }

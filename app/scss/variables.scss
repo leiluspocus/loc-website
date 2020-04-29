@@ -4,7 +4,7 @@ $locPink: #E64533;
 $locPurple: #2B3280;
 
 @mixin spaceSection {
-    margin-bottom: 85px;
+    margin-bottom: 75px;
 }
 
 @mixin paddingPage {
@@ -27,7 +27,12 @@ $locPurple: #2B3280;
     font-size: 30px;
 
     &--pink {
-        background: rgba(229, 51, 52, 0.3);
+        box-shadow: inset -10px -30px 1px #E5333433; 
+    }
+
+    &--pink:hover {
+        background-color: $locPink;
+        color: #fff;
     }
 
     a {

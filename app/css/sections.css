@@ -5,18 +5,22 @@
   line-height: 20px;
   font-size: 30px; }
   .cta--pink {
-    background: rgba(229, 51, 52, 0.3); }
+    box-shadow: inset -10px -30px 1px #E5333433; }
+  .cta--pink:hover {
+    background-color: #E64533;
+    color: #fff; }
   .cta a {
     text-decoration: none;
     color: #000; }
 
 .section {
-  margin-bottom: 85px;
+  margin-top: 85px;
   text-align: center; }
   .section h2 {
     font-family: 'B612 Mono', monospace;
     text-align: left;
-    padding-left: 32px; }
+    padding-left: 32px;
+    margin-bottom: 50px; }
     .section h2::before {
       content: url("../images/chevron.svg");
       position: relative;
@@ -27,12 +31,13 @@
   .section a {
     display: inline-block;
     font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 60px;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 22px;
     text-decoration: none;
     color: #000;
-    margin-top: 44px; }
+    margin-top: 44px;
+    padding: 3px 6px; }
   .section__diversity, .section .diversity {
     display: flex;
     flex-direction: column; }
@@ -42,25 +47,28 @@
       border-bottom: 10px solid #2B3280; }
     .section__diversity-codeweek, .section .diversity-codeweek {
       border-bottom: 10px solid #E64533; }
+    .section__diversity img, .section .diversity img {
+      max-width: 200px; }
     .section__diversity div, .section .diversity div {
+      margin-bottom: 75px;
       display: flex;
       align-items: center;
-      margin-bottom: 30px;
       background-color: #F7FAFF;
-      box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25); }
+      box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.25); }
       .section__diversity div p, .section .diversity div p {
         text-align: center;
         font-size: 18px;
-        line-height: 34px;
-        padding: 43px; }
+        line-height: 26px;
+        padding: 30px; }
     .section__diversity-school, .section__diversity-amtdp, .section .diversity-school, .section .diversity-amtdp {
-      width: 1200px;
       align-self: flex-end; }
-    .section__diversity-codeweek, .section .diversity-codeweek {
-      width: 1200px; }
 
 footer {
   text-align: center;
   background: #FAFAFA; }
   footer h2 {
     font-family: 'B612 Mono', monospace; }
+
+@media screen and (min-width: 1200px) {
+  .section__diversity div {
+    width: 1200px; } }
