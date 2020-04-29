@@ -7,11 +7,20 @@
  .code-editor {
   background-color: $codeEditorBg;
   font-family: 'B612 Mono', monospace;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
-  height: 380px;
+  height: 280px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+
+  &__smalldevices {
+    display: none;
+  }
+
+  span {
+    display: none;
+  }
 
   &__diese {
     color: $locPink;
@@ -33,5 +42,16 @@
   @keyframes caret {
     50% {
       border-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .code-editor {
+      flex-direction: row;
+      height: 380px;
+
+      span {
+        display: block;
+      }
     }
   }

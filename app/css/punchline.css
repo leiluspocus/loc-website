@@ -14,11 +14,16 @@
 .code-editor {
   background-color: #F7FAFF;
   font-family: 'B612 Mono', monospace;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
-  height: 380px;
+  height: 280px;
   display: flex;
+  flex-direction: column;
   align-items: center; }
+  .code-editor__smalldevices {
+    display: none; }
+  .code-editor span {
+    display: none; }
   .code-editor__diese {
     color: #E64533;
     margin-left: 90px;
@@ -32,3 +37,10 @@
 @keyframes caret {
   50% {
     border-color: transparent; } }
+
+@media screen and (min-width: 900px) {
+  .code-editor {
+    flex-direction: row;
+    height: 380px; }
+    .code-editor span {
+      display: block; } }
