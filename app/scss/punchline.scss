@@ -15,7 +15,7 @@
   align-items: center;
 
   &__smalldevices {
-    display: none;
+    padding: 40px;
   }
 
   span {
@@ -52,6 +52,10 @@
 
       span {
         display: block;
+      }
+
+      &__smalldevices {
+        display: none;
       }
     }
   }

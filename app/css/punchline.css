@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center; }
   .code-editor__smalldevices {
-    display: none; }
+    padding: 40px; }
   .code-editor span {
     display: none; }
   .code-editor__diese {
@@ -43,4 +43,6 @@
     flex-direction: row;
     height: 380px; }
     .code-editor span {
-      display: block; } }
+      display: block; }
+    .code-editor__smalldevices {
+      display: none; } }

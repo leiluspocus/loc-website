@@ -13,6 +13,7 @@
   text-align: center; }
   .section h2 {
     font-family: 'B612 Mono', monospace;
+    font-size: 21px;
     text-align: left;
     padding-left: 32px;
     margin-bottom: 50px; }
@@ -92,7 +93,7 @@
 footer {
   margin-top: 100px;
   text-align: center;
-  height: 245px;
+  height: 150px;
   background: #E3D9BA43; }
   footer h2 {
     padding-top: 30px;
