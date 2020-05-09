@@ -8,22 +8,10 @@
   background-color: $codeEditorBg;
   font-family: 'B612 Mono', monospace;
   font-size: 22px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__smalldevices {
-    padding: 40px;
-  }
-
-  span {
-    display: none;
-  }
+  padding: 40px;
 
   &__diese {
     color: $locPink;
-    margin-left: 90px;
     margin-right: 5px;
   }
 
@@ -31,30 +19,22 @@
     margin-right: 10px;
   }
 
-  #community {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite;
-  }
  }
 
   
-  @keyframes caret {
-    50% {
-      border-color: transparent;
-    }
-  }
+  
 
   @media screen and (min-width: 900px) {
     .code-editor {
+
+      display: flex;
+      align-items: center;
       flex-direction: row;
-      height: 380px;
+      height: 280px;
 
       span {
-        display: block;
+        display: inline;
       }
 
-      &__smalldevices {
-        display: none;
-      }
     }
   }
