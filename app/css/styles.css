@@ -261,9 +261,110 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 2.5rem;
+  justify-items: center;
   margin: 0 80px; }
   .section__partners img {
     height: 50px;
     justify-self: center; }
   .section__partners p {
     margin-bottom: 30px; }
+
+.bg-ada {
+  width: 257px;
+  height: 80px;
+  background: url("../images/partners.png") -439px -10px; }
+
+.bg-alan {
+  width: 182px;
+  height: 80px;
+  background: url("../images/partners.png") -10px -410px; }
+
+.bg-dashlane {
+  width: 373px;
+  height: 80px;
+  background: url("../images/partners.png") -10px -110px; }
+
+.bg-dataiku {
+  width: 143px;
+  height: 80px;
+  background: url("../images/partners.png") -10px -510px; }
+
+.bg-docker {
+  width: 170px;
+  height: 80px;
+  background: url("../images/partners.png") -212px -410px; }
+
+.bg-doctolib {
+  width: 237px;
+  height: 80px;
+  background: url("../images/partners.png") -439px -110px; }
+
+.bg-duchessfrance {
+  width: 80px;
+  height: 80px;
+  background: url("../images/partners.png") -314px -310px; }
+
+.bg-everoad {
+  width: 80px;
+  height: 80px;
+  background: url("../images/partners.png") -571px -410px; }
+
+.bg-freecodecamp {
+  width: 149px;
+  height: 80px;
+  background: url("../images/partners.png") -402px -410px; }
+
+.bg-google {
+  width: 78px;
+  height: 80px;
+  background: url("../images/partners.png") -110px -610px; }
+
+.bg-jobteaser {
+  width: 129px;
+  height: 80px;
+  background: url("../images/partners.png") -173px -510px; }
+
+.bg-logo_port_parallele {
+  width: 284px;
+  height: 80px;
+  background: url("../images/partners.png") -10px -310px; }
+
+.bg-octo {
+  width: 210px;
+  height: 80px;
+  background: url("../images/partners.png") -439px -310px; }
+
+.bg-parisdataladies {
+  width: 80px;
+  height: 80px;
+  background: url("../images/partners.png") -322px -510px; }
+
+.bg-theodo {
+  width: 409px;
+  height: 80px;
+  background: url("../images/partners.png") -10px -10px; }
+
+.bg-ut7 {
+  width: 80px;
+  height: 80px;
+  background: url("../images/partners.png") -422px -510px; }
+
+.bg-wescale {
+  width: 80px;
+  height: 80px;
+  background: url("../images/partners.png") -522px -510px; }
+
+.bg-wimlds {
+  width: 323px;
+  height: 80px;
+  background: url("../images/partners.png") -10px -210px; }
+
+.bg-womenonrails {
+  width: 222px;
+  height: 80px;
+  background: url("../images/partners.png") -439px -210px; }
+
+.bg-womenwhogo {
+  width: 80px;
+  height: 80px;
+  background: url("../images/partners.png") -10px -610px; }
