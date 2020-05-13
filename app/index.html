@@ -28,8 +28,7 @@
           </nav>
       </header>
       <section class="code-editor">
-        <p class="code-editor__smalldevices">Ladies of Code est une communauté de femmes intéressées par le code.</p>
-        <span class="code-editor__diese">#</span> <span id="loc">Ladies of Code est une communauté </span>  <span id="community"></span>
+        <span class="code-editor__diese">#</span> <span id="loc"></span> 
       </section>
       <section class="section" id="meetups">
         <h2>Nous organisons des meetups</h2>
@@ -56,14 +55,14 @@
             <img src="images/school.svg" />
             <p>
               Nous parlons de nos métiers à vos élèves en collège ou lycée. De nos études à nos tâches quotidiennes, on parlera de tout !<br />
-              <a class="diversity-cta cta--green" href="#"><span>Nous inviter dans votre classe</span></a>
+              <a class="diversity-cta cta--green" href="https://docs.google.com/forms/d/e/1FAIpQLScbq5v0rXfYCcBeBTGh8ZruER5ELXQ1w1UzwGZQYR4qC0kjYg/viewform" target="_blank"><span>Nous inviter dans votre classe</span></a>
             </p>
           </div>
           <div class="diversity-codeweek">
               <img src="images/codeweek.svg" />
               <p>
                 Tous les ans, nous organisons des sessions d'initiation au code dans le cadre de la #CodeWeek.<br />
-                <a href="#" class="diversity-cta cta--pink"><span>Voir le bilan de la dernière édition</span></a>
+                <a href="https://medium.com/ladiesofcodeparis/codeweek-2018-le-bilan-ebea53fd6ffd" target="_blank" rel="noopener" class="diversity-cta cta--pink"><span>Voir le bilan de la dernière édition</span></a>
               </p>
           
           </div>
@@ -80,24 +79,17 @@
       <section class="section" id="partners">
         <h2>Partenaires</h2>
 
-        <p>Ils nous soutiennent en hébergeant nos meetups ou en sponsorisant nos événements. Vous souhaitez en faire partie ?</p>
+        <p>Ils nous soutiennent en hébergeant nos meetups ou en sponsorisant nos événements. <a href="mailto:paris@ladiesofcode.com">Vous souhaitez en faire partie ?</a></p>
         <div class="section__partners">
-          <img src="partners/ada.png"/>
-          <img src="https://paris.ladiesofcode.com/wp-content/uploads/2017/01/arolla-1.png" />
-          <img src="partners/alan.png" />
-          <img src="https://paris.ladiesofcode.com/wp-content/uploads/2017/01/dailymotion.png" />
-          <img src="partners/dashlane.svg" />
-          <img src="partners/dataiku.png" />
-          <img src="https://paris.ladiesofcode.com/wp-content/uploads/2017/01/dotconference-1.png" />
-          <img src="partners/google.svg" />
-          <img src="partners/theodo.png" />
-          <img src="partners/doctolib.png" />
-          <img src="https://paris.ladiesofcode.com/wp-content/uploads/2017/01/mairieparis-1.png" />
-          <img src="partners/docker.png" />
-          <img src="https://paris.ladiesofcode.com/wp-content/uploads/2017/01/socialbuilder-1.png" />
-          <img src="https://paris.ladiesofcode.com/wp-content/uploads/2017/01/portparallele-1.png" />
-          <img src="partners/ut7.png" />
-          <img src="partners/wescale.png" />
+          <a href="https://adatechschool.fr/" target="_blank" rel="noopener" class="bg-ada"></a>
+          <a href="https://alan.com/" target="_blank" rel="noopener" class="bg-alan"></a>
+          <a href="https://wescale.fr/" target="_blank" rel="noopener" class="bg-wescale"></a>
+          <a href="https://dataiku.com/" target="_blank" rel="noopener" class="bg-dataiku"></a>
+          <a href="https://google.com/" target="_blank" rel="noopener" class="bg-google"></a>
+          <a href="https://doctolib.com/" target="_blank" rel="noopener" class="bg-doctolib"></a>
+          <a href="https://docker.com/" target="_blank" rel="noopener" class="bg-docker"></a>
+          <a href="https://ut7.fr/" target="_blank" rel="noopener" class="bg-ut7"></a>
+          <a href="https://dashlane.com/" target="_blank" rel="noopener" class="bg-dashlane"></a>
         </div>
       </section>
 
@@ -105,11 +97,12 @@
           <h2>Communautés amies</h2>
   
           <div class="section__partners">
-            <img src="communities/duchessfrance.png"/>
-            <img src="communities/parisdataladies.jpg" />
-            <img src="communities/wimlds.png" />
-            <img src="communities/womenonrails.png" />
-            <img src="communities/womenwhogo.jpeg" />
+            <a href="https://duchess-france.org/" target="_blank" rel="noopener" class="bg-duchessfrance"></a>
+            <a href="https://www.meetup.com/fr-FR/Paris-DataLadies/" target="_blank" rel="noopener" class="bg-parisdataladies"></a>
+            <a href="http://womenonrails.com/" target="_blank" rel="noopener" class="bg-womenonrails"></a>
+            <a href="https://www.meetup.com/fr-FR/Women-Who-Go-Paris/" target="_blank" rel="noopener" class="bg-womenwhogo"></a>
+            <a href="https://www.meetup.com/fr-FR/freeCodeCampParis/" target="_blank" rel="noopener" class="bg-freecodecamp"></a>
+            <a href="https://www.meetup.com/fr-FR/Paris-Women-in-Machine-Learning-Data-Science/" target="_blank" rel="noopener" class="bg-wimlds"></a>
           </div>
         </section>
 
@@ -126,50 +119,563 @@
           </div>
         </footer>
 
+      <script>
+        const defaultOptions = {
+  loop: false,
+  animateCursor: true,
 
-      <script>document.addEventListener('DOMContentLoaded',function(event){
-        // array with texts to type in typewriter
-        var dataText = [ "Ladies of Code est une communauté ", " de développeuses senior", " de développeuses junior", " d'étudiantes en informatique", " de développeuses en reconversion", " de femmes intéressées par le code et le numérique."];
-        
-        // type one text in the typwriter
-        // keeps calling itself until the text is finished
-        function typeWriter(text, i, fnCallback, isFirstElement) {
-          // chekc if text isn't finished yet
-          if (i < (text.length)) {
-            // add next character to p
-            if ( isFirstElement ) {
-           document.querySelector("#loc").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-            }
-            else {        
-           document.querySelector("#community").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-            }
-            // wait for a while and call this function again for next character
-            setTimeout(function() {
-              typeWriter(text, i + 1, fnCallback, isFirstElement)
-            }, 100);
-          }
-          // text finished, call callback if there is a callback function
-          else if (typeof fnCallback == 'function') {
-            // call callback after timeout
-            setTimeout(fnCallback, 700);
-          }
+  blinkSpeed: 400,
+
+  typeSpeed: 90,
+  deleteSpeed: 40,
+
+  typeSpeedMin: 65,
+  typeSpeedMax: 115,
+
+  deleteSpeedMin: 40,
+  deleteSpeedMax: 90,
+
+  typeClass: 'type-span',
+  cursorClass: 'cursor-span',
+
+  typeColor: 'black',
+  cursorColor: 'black'
+}
+
+class Cursor {
+  constructor(el, speed) {
+    this.el = el
+    this.speed = speed
+
+    this.faded = false
+
+    this.initialAssignment()
+    this.el.addEventListener('transitionend', this.logic.bind(this))
+
+    this.fade = this.fade.bind(this)
+    this.fadeIn = this.fadeIn.bind(this)
+  }
+
+  initialAssignment () {
+    Object.assign(this.el.style, {
+      opacity: '1',
+      'transition-duration': '0.1s'
+    })
+  }
+
+  fade () {
+    this
+      .el
+      .style
+      .opacity = '0'
+
+    this.faded = true
+  }
+
+  fadeIn () {
+    this
+      .el
+      .style
+      .opacity = '1'
+
+    this.faded = false
+  }
+
+  logic () {
+    this.faded
+      ? setTimeout(this.fadeIn, this.speed)
+      : setTimeout(this.fade, this.speed)
+  }
+
+  start () {
+    setTimeout(this.fade.bind(this), 0)
+  }
+}
+
+class Typewriter {
+  constructor(el, options) {
+    this.el = el
+    this.text = ''
+    this.queue = []
+    this.options = Object.assign({}, defaultOptions, options)
+
+    this.createTextEl()
+  }
+
+  // USER API
+
+  type (str) {
+    this.queue.push({
+      type: 'type',
+      content: str
+    })
+
+    return this
+  }
+
+  strings (interval, ...arr) {
+    arr.forEach((str, i) => {
+      this.queue.push({
+        type: 'type',
+        content: str
+      })
+
+      if (interval) {
+        this.queue.push({
+          type: 'pause',
+          time: interval
+        })
+      }
+
+      if (i === arr.length - 1) return
+
+      this.queue.push({
+        type: 'deleteChars',
+        count: str.length
+      })
+    })
+
+    return this
+  }
+
+  remove (num) {
+    this.queue.push({
+      type: 'deleteChars',
+      count: num
+    })
+
+    return this
+  }
+
+  clear () {
+    this.queue.push({
+      type: 'clear'
+    })
+
+    return this
+  }
+
+  clearText () {
+    this.text = ''
+    this.render()
+
+    return this
+  }
+
+  queueClearText () {
+    this.queue.push({
+      type: 'clearText'
+    })
+
+    return this
+  }
+
+  clearQueue() {
+    this.queue = []
+    this.text = ''
+    render()
+
+    return this
+  }
+
+  rest (time) {
+    this.queue.push({
+      type: 'pause',
+      time
+    })
+
+    return this
+  }
+
+  changeOps (options) {
+
+    this.queue.push({
+      type: 'changeOps',
+      options
+    })
+
+    return this
+  }
+
+  then (cb) {
+    this.queue.push({
+      type: 'callback',
+      cb
+    })
+
+    return this
+  }
+
+  removeCursor () {
+    this.queue.push({
+      type: 'deleteCursor'
+    })
+
+    return this
+  }
+
+  addCursor () {
+    this.queue.push({
+      type: 'createCursor'
+    })
+
+    return this
+  }
+
+  changeTypeColor(color) {
+    this.queue.push({
+      type: 'typeColor',
+      color
+    })
+
+    return this
+  }
+
+  changeCursorColor(color) {
+    this.queue.push({
+      type: 'cursorColor',
+      color
+    })
+
+    return this
+  }
+
+  changeTypeClass(className) {
+    this.queue.push({
+      type: 'typeClass',
+      className
+    })
+
+    return this
+  }
+
+  changeCursorClass(className) {
+    this.queue.push({
+      type: 'cursorClass',
+      className
+    })
+
+    return this 
+  }
+
+  start () {
+    if (this.running) return
+
+    if (!this.cursorEl) {
+      this.createCursorEl()
+    }
+
+    this.running = true
+    this.deleteAll().then(_ => this.loop(0))
+  }
+
+  // ACTIONS (promises)
+
+  add(content) {
+    let count = 0
+    this.timestamp = Date.now()
+
+    return new Promise((resolve, _) => {
+
+      const _step = () => {
+        if (count === content.length) return resolve()
+
+        const newStamp = Date.now()
+        const change = newStamp - this.timestamp
+
+        if (change >= this.getTypeSpeed()) {
+          this.addChar(content[count])
+          this.timestamp = newStamp
+          count++
         }
-        // start a typewriter animation for a text in the dataText array
-         function StartTextAnimation(i) {
-           if (typeof dataText[i] == 'undefined'){
-              return;
-           }
-           // check if dataText[i] exists
-          if (i < dataText[i].length) {
-            // text exists! start typewriter animation
-           typeWriter(dataText[i], 0, function(){
-             // after callback (and whole text has been animated), start next text
-             StartTextAnimation(i + 1);
-           }, i === 0);
-          }
+        requestAnimationFrame(_step)
+      }
+
+      requestAnimationFrame(_step)
+    })
+  }
+
+  delete(count) {
+    this.timestamp = Date.now()
+
+    return new Promise((resolve, _) => {
+
+      const _step = () => {
+        if (count === 0) return resolve()
+
+        const newStamp = Date.now()
+        const change = newStamp - this.timestamp
+
+        if (change >= this.getDeleteSpeed()) {
+          this.deleteChar()
+          this.timestamp = newStamp
+          count--
         }
-        // start the text animation
-        StartTextAnimation(0);
-      });</script>
+        requestAnimationFrame(_step)
+      }
+
+      requestAnimationFrame(_step)
+    })
+  }
+
+  deleteAll() {
+    return this.delete(this.text.length)
+  }
+
+  pause(time) {
+    return new Promise((resolve, _) => {
+      setTimeout(resolve, time)
+    })
+  }
+
+  callback(cb) {
+    return new Promise((resolve, _) => {
+      cb()
+      resolve()
+    })
+  }
+
+  deleteCursor () {
+    return new Promise((resolve, _) => {
+      this.removeCursorEl()
+      resolve()
+    })
+  }
+
+  createCursor () {
+    return new Promise((resolve, _) => {
+      this.createCursorEl()
+      resolve()
+    })
+  }
+
+  clearTextAction () {
+    return new Promise((resolve, _) => {
+      this.clearText()
+      resolve()
+    })
+  }
+
+  changeOpsAction (options) {
+    return new Promise((resolve, _) => {
+      this.options = Object.assign(this.options, options)
+      resolve()
+    })
+  }
+
+  typeColor (color) {
+    return new Promise ((resolve, _) => {
+      this.textEl.style.color = color
+      resolve()
+    })
+  }
+
+  cursorColor (color) {
+    return new Promise((resolve, _) => {
+      this.cursorEl.style.color = color
+      resolve()
+    })
+  }
+
+  typeClass (className) {
+    return new Promise ((resolve, _) => {
+      this.textEl.className = className
+      resolve()
+    })
+  }
+
+  cursorClass (className) {
+    return new Promise((resolve, _) => {
+      this.cursorEl.className = className
+      resolve()
+    })
+  }
+
+  // HELPERS
+
+  deleteChar() {
+    this.text = this.text.slice(0, -1)
+    this.render()
+  }
+
+  addChar(char) {
+    this.text += char
+    this.render()
+  }
+
+  getTypeSpeed() {
+    const speed = this.options.typeSpeed
+
+    if (typeof speed === 'number') {
+      return speed
+    }
+
+    const max = this.options.typeSpeedMax
+    const min = this.options.typeSpeedMin
+
+    const random = Math.floor(Math.random() * (max - min))
+    return random + min
+  }
+
+  getDeleteSpeed() {
+    const speed = this.options.deleteSpeed
+
+    if (typeof speed === 'number') {
+      return speed
+    }
+
+    const max = this.options.deleteSpeedMax
+    const min = this.options.deleteSpeedMin
+
+    const random = Math.floor(Math.random() * (max - min))
+    return random + min
+  }
+
+  step(idx) {
+    const action = this.queue[idx]
+
+    switch (action.type) {
+      case 'type':
+        return this.add(action.content)
+
+      case 'deleteChars':
+        return this.delete(action.count)
+
+      case 'clear':
+        return this.deleteAll()
+
+      case 'pause':
+        return this.pause(action.time)
+
+      case 'callback':
+        return this.callback(action.cb)
+
+      case 'deleteCursor':
+        return this.deleteCursor()
+
+      case 'createCursor':
+        return this.createCursor()
+
+      case 'clearText':
+        return this.clearTextAction()
+
+      case 'changeOps':
+        return this.changeOpsAction(action.options)
+
+      case 'typeColor':
+        return this.typeColor(action.color)
+      
+      case 'cursorColor':
+        return this.cursorColor(action.color)
+
+      case 'typeClass':
+        return this.typeClass(action.className)
+      
+      case 'cursorClass':
+        return this.cursorClass(action.className)
+    }
+  }
+
+  loop(idx) {
+    if (idx === this.queue.length) {
+      this.running = false
+
+      if (this.options.loop) {
+        this.start()
+      }
+      return
+    }
+
+    this.step(idx).then(_ => {
+      this.loop(idx + 1)
+    })
+  }
+
+  createCursorEl() {
+    if (typeof this.options.animateCursor === 'String') return
+
+    this.cursorEl = document.createElement('span')
+    this.cursorEl.innerHTML = '|'
+
+    this
+      .cursorEl
+      .style
+      .color = this.options.cursorColor
+
+    this
+      .cursorEl
+      .classList
+      .add(this.options.cursorClass)
+
+    this.el.appendChild(this.cursorEl)
+
+    if (this.options.animateCursor) {
+      this.cursor = new Cursor(
+        this.cursorEl, 
+        this.options.blinkSpeed
+      )
+      
+      this.cursor.start()
+    }
+  }
+
+  removeCursorEl() {
+    this
+      .el
+      .removeChild(this.cursorEl)
+
+    this.cursorEl = null
+  }
+
+  createTextEl() {
+    this.textEl = document.createElement('span')
+
+    this
+      .textEl
+      .classList
+      .add(this.options.typeClass)
+
+    this
+      .textEl
+      .style
+      .color = this.options.typeColor
+
+    this.el.appendChild(this.textEl)
+  }
+
+  render() {
+    this.textEl.innerHTML = this.text
+  }
+}
+      </script>
+      <script>
+        const writer = new Typewriter(document.getElementById('loc'), {
+          typeColor: 'black',
+          typeSpeed: 80,
+          animateCursor: true
+        })
+
+        writer
+          .type('Ladies of Code est une communauté de développeuses ')
+          .rest(500)
+          .changeOps({ typeColor: 'red' })
+          .remove(14)
+          .type('cheffes de projet web')
+          .rest(500)
+          .remove(21)
+          .type('data scientist')
+          .rest(500)
+          .remove(14)
+          .type('développeuses en reconversion')
+          .rest(500)
+          .remove(29)
+          .type('étudiantes en informatique')
+          .rest(500)
+          .remove(26)
+          .type('femmes intéressées par le code')
+          .rest(500)
+          .rest(500)
+          .start()
+      </script>
   </body>
 </html>

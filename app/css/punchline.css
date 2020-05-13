@@ -15,34 +15,18 @@
   background-color: #F7FAFF;
   font-family: 'B612 Mono', monospace;
   font-size: 22px;
-  text-align: center;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .code-editor__smalldevices {
-    padding: 40px; }
-  .code-editor span {
-    display: none; }
+  padding: 40px; }
   .code-editor__diese {
     color: #E64533;
-    margin-left: 90px;
     margin-right: 5px; }
   .code-editor #loc {
     margin-right: 10px; }
-  .code-editor #community {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite; }
-
-@keyframes caret {
-  50% {
-    border-color: transparent; } }
 
 @media screen and (min-width: 900px) {
   .code-editor {
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    height: 380px; }
+    height: 280px; }
     .code-editor span {
-      display: block; }
-    .code-editor__smalldevices {
-      display: none; } }
+      display: inline; } }
